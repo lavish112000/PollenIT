@@ -77,10 +77,13 @@ function AppExperience() {
   );
 }
 
+import { Analytics } from '@vercel/analytics/react';
+
 export default function App() {
   return (
     <MotionPreferenceProvider>
       <AppExperience />
+      <Analytics />
     </MotionPreferenceProvider>
   );
 }
